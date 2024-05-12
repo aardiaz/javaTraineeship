@@ -15,9 +15,13 @@ public class studentMarksheet {
 		
 		int total = 0;
 		int fullmark =500;
-		int obtmarks[] = {99,80,87,88,69};
-		
-		for(int i=0; i<obtmarks.length; i++){
+		String[] subjects = {"Math", "English", "Nepali", "Computer","Science"};
+		 int marks[] = new int[5];		
+		//int obtmarks[] = {99,80,87,88,69};
+		Scannser sc = new Scanner(System.in);
+		for(int i=0; i<marks.length; i++){
+                          System.out.println("Enter marks of "+subjects[i]);
+			marks[0] = sc.nextInt();
 			total=total+obtmarks[i];
 		}
 		float percentage = (total*100)/fullmark;
